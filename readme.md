@@ -20,7 +20,7 @@ CMakeLists所在的目录的路径
 
 CMAKE_CURRENT_SOURCE_DIR 貌似和它有一样的作用
 
-![image-20221130040359656](F:\图片保存处勿动\image-20221130040359656.png)
+![1.png](https://github.com/upkeke/subCMake/blob/main/pic/1.png?raw=true)
 
 ##　set
 
@@ -101,7 +101,7 @@ SET(LIBRARY_OUTPUT_PATH  "E:/ode/MyLib/bin")
 
 E:\code\mutCMakeLists
 
-![image-20221130064510130](F:\图片保存处勿动\image-20221130064510130.png)
+![2.png](https://github.com/upkeke/subCMake/blob/main/pic/2.png?raw=true)
 
 ```cmake
 cmake_minimum_required(VERSION 3.5)
@@ -154,7 +154,7 @@ include_directories(./lib_head)
 
 》》E:\code\MyLib\bin 这个目录在环境变量中，加入此时没有这几个dll，只在当前目录子目录lib下存在，
 
-![image-20221130065330909](F:\图片保存处勿动\image-20221130065330909.png)
+![2.png](https://github.com/upkeke/subCMake/blob/main/pic/3.png?raw=true)
 
 ```cmake
 include_directories(./lib_head)
@@ -171,7 +171,7 @@ link_directories(${LIB_PATH})
 
 dll已经被复制到这个有环境变量的文件夹下面，那么不需要link_directories这一步，系统能够找到
 
-![image-20221130065956754](F:\图片保存处勿动\image-20221130065956754.png)
+![2.png](https://github.com/upkeke/subCMake/blob/main/pic/4.png?raw=true)
 
 
 
@@ -213,7 +213,7 @@ add_executable(${PROJECT_NAME} main.cpp)
 - Windows目录: `C:\Windows`
 - 环境变量PATH中所有目录
 
-![image-20221130043339647](F:\图片保存处勿动\image-20221130043339647.png)
+![2.png](https://github.com/upkeke/subCMake/blob/main/pic/5.png?raw=true)
 
 link_directories(./)这儿我的查找目录就是当前目录
 
